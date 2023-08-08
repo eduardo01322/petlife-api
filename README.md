@@ -26,6 +26,7 @@ code .
 ```
 # insomnia
 
+![Run in Insomnia}](https://insomnia.rest/images/run.svg)](https://insomnia.rest/run/?label=PetLife&uri=https%3A%2F%2Fraw.githubusercontent.com%2Feduardo01322%2Fpetlife-api%2Fmain%2FInsomnia.json%3Ftoken%3DGHSAT0AAAAAACGBYKJIHYAAXGL47ULJI2NEZGSEO6A)
 
 ## Licença
 
