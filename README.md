@@ -18,7 +18,7 @@ composer update
 ```
 4. copiando o .env do exemplo
 ```
-copy .env.example .env
+copy .env.example crie .env e copie
 ```
 5. Acessar o virtual studio code
 ```
