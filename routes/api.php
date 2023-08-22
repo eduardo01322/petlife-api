@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\ClientesController;
+use App\Http\Controllers\funcionarioscontroller;
 use App\Models\Clientes;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
@@ -17,3 +18,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 route::post('clientes', [ClientesController::class, 'clientes']);
+route::get('/find/{id}', [ClientesController::class, 'pesquisarPorId']);
+
+route::post('funcionarios', [funcionarioscontroller::class, 'clientes']);
+route::get('/findF/{id}', [funcionarioscontroller::class, 'pesquisarPorId']);

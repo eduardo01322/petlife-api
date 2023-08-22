@@ -13,6 +13,11 @@ return new class extends Migration
     {
         Schema::create('funcionarios', function (Blueprint $table) {
             $table->id();
+            $table->string('nome',80)->nullable(false);
+            $table->string('cpf',11)->unique()->nullable(false);
+            $table->string('email',100)->unique()->nullable(false);
+            $table->string('password')->nullable(false);
+            $table->string('ocupação',50)->nullable(false);
             $table->timestamps();
         });
     }

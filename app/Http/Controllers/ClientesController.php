@@ -27,4 +27,8 @@ class ClientesController extends Controller
         "data"=> $cliente
         ]);
     }
+    
+    public function pesquisarPorId($id){
+        return Clientes::find($id);
+    }
 }
