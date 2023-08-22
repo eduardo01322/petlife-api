@@ -64,9 +64,9 @@ class ClientesRequest extends FormRequest
             'rua.required' => 'o rua é obrigatorio',
             'rua.max' => 'o campo rua deve contar no maximo 30 caracteres',
             'rua.min' => 'o campo rua deve contar no minimo 10 caracteres',
-            'n° da residencia.required' => 'o n° da residencia é obrigatorio',
-            'n° da residencia.max' => 'o campo n° da residencia deve contar no maximo 1 caracteres',
-            'n° da residencia.min' => 'o campo n° da residencia deve contar no minimo 6 caracteres',
+            'numero.required' => 'o numero é obrigatorio',
+            'numero.max' => 'o campo numero deve contar no maximo 1 caracteres',
+            'numero.min' => 'o campo numero deve contar no minimo 6 caracteres',
             
         ];
     }

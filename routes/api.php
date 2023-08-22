@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\ClientesController;
+use App\Models\Clientes;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -15,4 +16,4 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-route::post('clientes', [ClientesController::class, 'clientes']);
+route::post('cliente', [ClientesController::class, 'cliente']);

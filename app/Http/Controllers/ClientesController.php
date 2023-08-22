@@ -9,8 +9,8 @@ use Illuminate\Support\Facades\Hash;
 
 class ClientesController extends Controller
 {
-    public function clientes(ClientesRequest $request){
-        $clientes = clientes::create([
+    public function Cliente(ClientesRequest $request){
+        $cliente = clientes::create([
             'nome' => $request->nome,
             'cpf' => $request->cpf,
             'email' => $request->email,
@@ -24,7 +24,7 @@ class ClientesController extends Controller
         return response()->json([
             "success" => true,
             "message" => "usuario cadastrado com sucesso",
-            "data" => $clientes
+            "data" => $cliente
         ], 200);
     }
 }

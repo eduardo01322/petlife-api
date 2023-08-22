@@ -17,6 +17,6 @@ class clientes extends Model
         'telefone',
         'bairro',
         'rua',
-        'n° da residencia'
+        'numero'
     ];
 }
