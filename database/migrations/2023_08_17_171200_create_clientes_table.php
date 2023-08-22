@@ -20,7 +20,7 @@ return new class extends Migration
             $table->string('telefone', 15)->nullable(true);
             $table->string('bairro', 11)->unique()->nullable(false);
             $table->string('rua', 11)->unique()->nullable(false);
-            $table->string('n° da residencia', 11)->unique()->nullable(false);
+            $table->string('numero', 11)->unique()->nullable(false);
             $table->timestamps();
         });
     }

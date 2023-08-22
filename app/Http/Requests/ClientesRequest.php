@@ -31,11 +31,11 @@ class ClientesRequest extends FormRequest
             'telefone' => 'required|max:15|min:10',
             'bairro' => 'required|max:80|min:5',
              'rua' => 'required|max:30|min:10',
-             'n° da residencia' => 'required|max:1|min:6',
+             'numero' => 'required|max:6|min:1',
         ];
     }
 
-    public function failerValidation(Validator $validator){
+    public function failedValidation(Validator $validator){
         throw new HttpResponseException(response()->json([
             'success' => false,
             'error' => $validator->errors()
@@ -44,7 +44,7 @@ class ClientesRequest extends FormRequest
     public function messages(){
 
         return[
-            'name.required' => 'o nome é obrigatorio',
+            'nome.required' => 'o nome é obrigatorio',
             'nome.max' => 'o campo nome deve contar no maximo 80 caracteres',
             'nome.min' => 'o campo nome deve contar no minimo 5 caracteres',
             'cpf.required' => 'o cpf é obrigatorio',

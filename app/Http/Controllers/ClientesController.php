@@ -18,7 +18,7 @@ class ClientesController extends Controller
             'telefone' => $request->telefone,
             'bairro' => $request->bairro,
             'rua' => $request->rua,
-            'n° da residencia' => $request->n°
+            'numero' => $request->numero
         ]);
 
         return response()->json([
