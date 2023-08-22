@@ -20,5 +20,5 @@ use Illuminate\Support\Facades\Route;
 route::post('clientes', [ClientesController::class, 'clientes']);
 route::get('/find/{id}', [ClientesController::class, 'pesquisarPorId']);
 
-route::post('funcionarios', [funcionarioscontroller::class, 'clientes']);
+route::post('funcionarios', [funcionarioscontroller::class, 'funcionarios']);
 route::get('/findF/{id}', [funcionarioscontroller::class, 'pesquisarPorId']);
