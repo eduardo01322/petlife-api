@@ -64,7 +64,7 @@ class ClientesRequest extends FormRequest
             'bairro.min' => 'O campo nome deve ter no minimo 5 caracteres',
             'rua.required' => 'O campo rua é obrigatorio',
             'rua.max' => 'O campo rua deve ter no maximo 30 caracteres',
-            'rua.min' => 'O campo nome deve ter no minimo 10 caracteres',
+            'rua.min' => 'O campo rua deve ter no minimo 10 caracteres',
             'numero.required' => 'O campo numero é obrigatorio',
             'numero.max' => 'O campo numero deve ter no maximo 6 caracteres',
             'numero.min' => 'O campo numero deve ter no minimo 1 caracteres'

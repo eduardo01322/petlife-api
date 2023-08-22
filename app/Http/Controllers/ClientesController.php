@@ -9,7 +9,7 @@ use Illuminate\Support\Facades\Hash;
 
 class ClientesController extends Controller
 {
-    public function Cliente(Clientesrequest $request){
+    public function Clientes(Clientesrequest $request){
         $cliente= Clientes::create([
             'nome'=> $request ->nome,
             'cpf'=> $request ->cpf,
