@@ -13,6 +13,11 @@ return new class extends Migration
     {
         Schema::create('pet_models', function (Blueprint $table) {
             $table->id();
+            $table->string('nome', 30)->nullable(false);
+            $table->string('idade',2)->nullable(false);
+            $table->string('raca', 20)->nullable(false);
+            $table->string('requerimentos')->nullable(false);
+            $table->string('enfermidades')->nullable(false);
             $table->timestamps();
         });
     }
