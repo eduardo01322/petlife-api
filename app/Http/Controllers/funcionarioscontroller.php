@@ -24,7 +24,7 @@ class funcionarioscontroller extends Controller
         "data"=> $funcionario
         ]);
     }
-    public function pesquisarPorId($id){
-        return funcionarios::findF($id);
+    public function IdFuncionarios($id){
+        return funcionarios::find($id);
     }
 }

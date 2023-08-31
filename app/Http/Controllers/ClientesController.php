@@ -28,7 +28,7 @@ class ClientesController extends Controller
         ]);
     }
     
-    public function pesquisarPorId($id){
+    public function IdClientes($id){
         return Clientes::find($id);
     }
 }
