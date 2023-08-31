@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\ClientesController;
+use App\Http\Controllers\fornecedorcontroller;
 use App\Http\Controllers\funcionarioscontroller;
 use App\Http\Controllers\petcontroller;
 use App\Models\Clientes;
@@ -26,3 +27,6 @@ route::get('/find/{id}', [funcionarioscontroller::class, 'IdFuncionarios']);
 
 route::post('pet', [petcontroller::class, 'pet']);
 route::get('/find/{id}', [petcontroller::class, 'IdPet']);
+
+route::post('fornecedor', [fornecedorcontroller::class, 'fornecedor']);
+route::get('/find/{id}', [fornecedorcontroller::class, 'IdFornecedor']);
